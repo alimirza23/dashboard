@@ -1,0 +1,169 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+
+<link href="css/font-awesome.css" rel="stylesheet"> 
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+
+
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+
+<script src="js/metisMenu.min.js"></script>
+<script src="js/custom.js"></script>
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/mystyle.css" rel="stylesheet">
+</head> 
+<body class="cbp-spmenu-push">
+	<div class="main-content">
+		<div class=" sidebar" role="navigation">
+            <div class="navbar-collapse">
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+					<ul class="nav" id="side-menu">
+						<li>
+							<a href="index.html"><i class="fa fa-spinner nav_icon"></i>Dashboard</a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-home nav_icon"></i>Properties <span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li>
+									<a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Add Property</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Active Properties</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Rejected Properties</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Pending Properties</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-envelope nav_icon"></i>Mailbox<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li>
+									<a href="inbox.html"><i class="fa fa-circle" aria-hidden="true"></i> Inbox <span class="nav-badge-btm"></span></a>
+								</li>
+								<li>
+									<a href="compose.html"><i class="fa fa-circle" aria-hidden="true"></i> Compose email</a>
+								</li>
+							</ul>
+							
+						</li>
+					</ul>
+					<div class="clearfix"> </div>
+				</nav>
+			</div>
+		</div>
+		<div class="sticky-header header-section ">
+			<div class="header-left">
+				<button id="showLeftPush"><i class="fa fa-bars"></i></button>
+				<div class="logo">
+					<a href="index.html">
+						
+					</a>
+				</div>
+
+			</div>
+			<div class="header-right">
+					<div class="profile_details_left">
+				<div class="profile_details">		
+				<ul>
+					<li class="dropdown profile_details_drop">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+							<div class="profile_img">	
+								<span class="prfil-img"><img src="images/a.png" alt=""> </span> 
+								<div class="user-name">
+									<p>Ali Mirza</p>
+									<span>User</span>
+								</div>
+								<i class="fa fa-angle-down lnr"></i>
+								<i class="fa fa-angle-up lnr"></i>
+								<div class="clearfix"></div>	
+							</div>	
+						</a>
+						<ul class="dropdown-menu drp-mnu">
+							<li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li> 
+							<li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			</div>
+			</div>
+			<div class="clearfix"> </div>
+			
+		</div>
+
+		<div id="page-wrapper">
+				<div class="main-page compose">
+					<div class="col-md-12 compose-right widget-shadow">
+						<div class="panel-default">
+							<div class="panel-heading">
+								Compose New Message 
+							</div>
+							<div class="panel-body">
+								<div class="alert alert-info">
+									Please fill details to send a new message
+								</div>
+								<form class="com-mail">
+									<input type="text" class="form-control1 control3" placeholder="To :">
+									<input type="text" class="form-control1 control3" placeholder="Subject :">
+									<textarea rows="6" class="form-control1 control2" placeholder="Message :" ></textarea>
+									<div class="form-group">
+										<div class="btn btn-default btn-file">
+											<i class="fa fa-paperclip"></i> Attachment
+											<input type="file" name="attachment">
+										</div>
+										<p class="help-block">Max. 32MB</p>
+									</div>
+									<input type="submit" value="Send Message"> 
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>	
+				</div>
+			</div>
+	</div>
+		<script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+				
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+			
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+			}
+		</script>
+
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/scripts.js"></script>
+
+   <script src="js/bootstrap.js"> </script>
+</body>
+</html>
